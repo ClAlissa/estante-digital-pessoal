@@ -1,0 +1,24 @@
+name: deploy
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: website
+    steps:
+    - name: Deploy to production
+      uses: appleboy/ssh-action@master
+      env:
+        REPOSITORY_PATH_IN_SERVER: ${{ secrets.REPOSITORY_PATH_IN_SERVER }}
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        port: ${{ secrets.SSH_PORT }}
+        envs: REPOSITORY_PATH_IN_SERVER
+        username: ${{ secrets.SSH_USERNAME }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        script: cd $REPOSITORY_PATH_IN_SERVER && bash .github/deployment/deploy.sh
