@@ -3,5 +3,5 @@
 </p>
 
 <p align="center">
-  <img alt="License" src="">
+  <img alt="License" src="https://img.shields.io/github/license/willpinha/estante-digital-pessoal?style=flat-square">
 </p>
