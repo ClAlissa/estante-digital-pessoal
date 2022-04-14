@@ -3,5 +3,6 @@
 </p>
 
 <p align="center">
+  <img alt="Deployment" src="https://img.shields.io/github/workflow/status/willpinha/estante-digital-pessoal/deploy?label=deploy&style=flat-square">
   <img alt="License" src="https://img.shields.io/github/license/willpinha/estante-digital-pessoal?style=flat-square">
 </p>
