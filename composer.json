@@ -1,0 +1,27 @@
+{
+    "name": "willpinha/estante-digital-pessoal",
+    "description": "📚 Plataforma que armazena diversas informações sobre livros, filmes e séries",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+		"psr-4": {
+			"EDP\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"EDP\\Tests\\": "tests/"
+		}
+	},
+    "require": {
+        "php": ">=8.1.0"
+    },
+    "require-dev": {
+		"phpunit/phpunit": "^9.5"
+	},
+	"scripts": {
+		"test": "vendor/bin/phpunit tests/",
+		"cov": "vendor/bin/phpunit --coverage-clover coverage.xml"
+	}
+}
