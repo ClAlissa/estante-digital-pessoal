@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule (\w+)/(\w+) index.php?usuario=$1&pagina=$2 [QSA] 
