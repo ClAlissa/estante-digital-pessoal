@@ -22,6 +22,6 @@
 	},
 	"scripts": {
 		"test": "vendor/bin/phpunit tests/",
-		"cov": "vendor/bin/phpunit --coverage-clover coverage.xml"
+		"cov": "php -dxdebug.mode=coverage vendor/bin/phpunit --coverage-clover coverage.xml"
 	}
 }
