@@ -14,3 +14,9 @@
 O sistema Estante Digital Pessoal, ou EDP, é uma plataforma que armazena informações sobre diversas mídias, sendo elas livros, filmes, séries de tv e animes.
 
 O projeto faz parte de um trabalho da disciplina de Banco de Dados II no curso de Sistemas de Informação da Universidade de São Paulo.
+
+# Como utilizar?
+
+O sistema EDP está hospedado em [edp.willpinha.com.br](edp.willpinha.com.br) e pode ser utilizado a qualquer momento.
+
+Para começar, é preciso criar um usuário e uma senha. Depois, você pode acessar sua conta e pesquisar por diferentes mídias, criar listas pessoais e adicionar amigos que também usam o sistema.
