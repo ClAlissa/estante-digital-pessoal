@@ -3,8 +3,9 @@
 </p>
 
 <p align="center">
-  <img alt="Deployment" src="https://img.shields.io/github/workflow/status/willpinha/estante-digital-pessoal/deploy?label=deploy">
-  <img alt="Build" src="https://img.shields.io/github/workflow/status/willpinha/estante-digital-pessoal/build">
+  <img alt="Deployment" src="https://github.com/willpinha/estante-digital-pessoal/workflows/deploy/badge.svg">
+  <img alt="Build" src="https://github.com/willpinha/estante-digital-pessoal/workflows/build/badge.svg">
+  <img alt="Codecov" src="https://codecov.io/gh/willpinha/estante-digital-pessoal/branch/master/graph/badge.svg?token=J69QGU85W3">
   <img alt="License" src="https://img.shields.io/github/license/willpinha/estante-digital-pessoal">
 </p>
 
