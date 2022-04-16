@@ -15,6 +15,6 @@ O sistema Estante Digital Pessoal, ou EDP, é uma plataforma que armazena inform
 
 O projeto faz parte de um trabalho da disciplina de Banco de Dados II no curso de Sistemas de Informação da Universidade de São Paulo.
 
-# Como utilizar o EDP?
+# Como utilizar?
 
-O sistema está hospedado em [edp.willpinha.com.br](edp.willpinha.com.br) e pode ser utilizado a qualquer momento.
+O sistema EDP está hospedado em [edp.willpinha.com.br](edp.willpinha.com.br) e pode ser utilizado a qualquer momento.
