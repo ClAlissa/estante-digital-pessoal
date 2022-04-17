@@ -6,7 +6,7 @@
  * Exemplo: https://edp.willpinha.com.br/nome_usuario/nome_lista
  */
 CREATE DOMAIN PART_OF_URI AS CHAR(20)
-CHECK (PART_OF_URI ~ "\w+");
+CHECK (VALUE ~* '\w+');
 
 /* -------------------------------------------------- */
 
@@ -20,7 +20,7 @@ CREATE TABLE usuario (
 /* -------------------------------------------------- */
 
 CREATE TABLE lista (
-    nome_lista PART_OF_URI,
+    nome_lista PART_OF_URI UNIQUE,
     nome_usuario PART_OF_URI,
     eh_favorita BOOLEAN,
     PRIMARY KEY(nome_lista, nome_usuario),
@@ -41,11 +41,11 @@ CREATE TABLE amizade (
 /* -------------------------------------------------- */
 
 CREATE TABLE midia (
-    id_midia INTEGER,
+    id_midia INT NOT NULL GENERATED ALWAYS AS IDENTITY,
     nome_midia CHAR(30),
     data_lanc DATE NOT NULL,
     resumo VARCHAR(255),
-    SERIAL PRIMARY KEY(id_midia)
+    PRIMARY KEY(id_midia)
 );
 
 /* -------------------------------------------------- */
@@ -87,10 +87,10 @@ CREATE TABLE avaliacao (
 /* -------------------------------------------------- */
 
 CREATE TABLE diretor (
-    id_dir INTEGER,
+    id_dir INT NOT NULL GENERATED ALWAYS AS IDENTITY,
     nome_dir CHAR(30) NOT NULL,
     data_nasc DATE NOT NULL,
-    SERIAL PRIMARY KEY(id_dir)
+    PRIMARY KEY(id_dir)
 );
 
 /* -------------------------------------------------- */
@@ -106,10 +106,10 @@ CREATE TABLE direcao (
 /* -------------------------------------------------- */
 
 CREATE TABLE ator (
-    id_ator INTEGER,
+    id_ator INT NOT NULL GENERATED ALWAYS AS IDENTITY,
     nome_ator CHAR(30) NOT NULL,
     data_nasc DATE NOT NULL,
-    SERIAL PRIMARY KEY(id_ator)
+    PRIMARY KEY(id_ator)
 );
 
 /* -------------------------------------------------- */
@@ -125,13 +125,13 @@ CREATE TABLE participacao_ator (
 /* -------------------------------------------------- */
 
 CREATE TABLE premiacao (
-    id_prem INTEGER,
+    id_prem INT NOT NULL GENERATED ALWAYS AS IDENTITY,
     id_midia INTEGER,
     id_ator INTEGER,
     nome_prem CHAR(30) NOT NULL,
     categoria CHAR(30) NOT NULL,
     data_prem DATE NOT NULL,
-    SERIAL PRIMARY KEY(id_prem),
+    PRIMARY KEY(id_prem),
     FOREIGN KEY(id_ator) REFERENCES ator(id_ator),
     FOREIGN KEY(id_midia) REFERENCES midia(id_midia)
 );
@@ -139,12 +139,12 @@ CREATE TABLE premiacao (
 /* -------------------------------------------------- */
 
 CREATE TABLE personagem (
-    id_pers INTEGER,
+    id_pers INT NOT NULL GENERATED ALWAYS AS IDENTITY,
     id_midia INTEGER,
     id_autor INTEGER,
     nome_pers CHAR(30) NOT NULL,
     descricao VARCHAR(255) NOT NULL,
-    SERIAL PRIMARY KEY(id_pers),
+    PRIMARY KEY(id_pers),
     FOREIGN KEY(id_autor) REFERENCES diretor(id_dir),
     FOREIGN KEY(id_midia) REFERENCES midia(id_midia)
 );
@@ -202,8 +202,8 @@ CREATE TABLE serie (
 /* -------------------------------------------------- */
 
 CREATE TABLE temporada (
-    numero_temp INTEGER,
-    id_midia INTEGER,
+    numero_temp INTEGER UNIQUE,
+    id_midia INTEGER UNIQUE,
     PRIMARY KEY(numero_temp, id_midia),
     FOREIGN KEY(id_midia) REFERENCES serie(id_midia)
 );
@@ -220,4 +220,3 @@ CREATE TABLE episodio (
 );
 
 /* -------------------------------------------------- */
-
