@@ -42,9 +42,9 @@ CREATE TABLE amizade (
 
 CREATE TABLE midia (
     id_midia INT NOT NULL GENERATED ALWAYS AS IDENTITY,
-    nome_midia CHAR(30),
+    nome_midia CHAR(60),
     data_lanc DATE NOT NULL,
-    resumo VARCHAR(255),
+    resumo VARCHAR(600),
     PRIMARY KEY(id_midia)
 );
 
