@@ -184,7 +184,7 @@ CREATE TABLE livro (
 
 CREATE TABLE manga (
     id_midia INTEGER,
-    tem_adapt BOOLEAN NOT NULL,
+    tem_anime BOOLEAN NOT NULL,
     nome_estudio CHAR(30),
     PRIMARY KEY(id_midia),
     FOREIGN KEY(id_midia) REFERENCES midia(id_midia)
