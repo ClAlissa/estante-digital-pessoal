@@ -1,5 +1,5 @@
 INSERT INTO LIVRO (editora, num_edicao, eh_saga) VALUES
-(' Estação Liberdade', 1, FALSE), -- Don Juan
+('Estação Liberdade', 1, FALSE), -- Don Juan
 ('Companhia das Letras', 2, FALSE), -- Memorial do Convento
 ('Nova Fronteira', 1, FALSE), -- O inominável
 ('Rocco', 1, FALSE), -- Mulheres que correm com os lobos
