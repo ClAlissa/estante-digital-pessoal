@@ -1,7 +1,7 @@
 # Melissa [ator, diretor, filme, livro, manga] 
-# Igor [] 
-# Claudia []
-# Willian []
+# Igor [midia, premiacao, serie, usuario, episodio] 
+# Claudia [lista, personagem, temporada, midia_generos, amizade]
+# Willian [avaliacao, direcao, participacao_ator, participacao_personagem, pertence]
 
 entidades_fortes = [
     "ator",
