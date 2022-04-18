@@ -11,11 +11,10 @@ INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (7,'Aca
 INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (7,'Saturn Awards', 'Best Fantasy Film', '2002-03-15');
 INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (7,'Saturn Awards', 'Best Director', '2002-11-06');
 INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (7,'Saturn Awards', 'Best Supporting Actor', '2002-04-14');
-
 INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (8,'ASCAP Awards', 'Top Box Office Films', '2013-03-28');
 INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (8,'Academy Awards', 'Scientific and Engineering Award', '2013-01-05');
 INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (8,'AEAF Awards 2013', 'Feature Film - Visual Effects', '2014-09-13');
 INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (8,'Australia Box Office Awards', 'Real D Award for Highest Grossing 3D Film in Australia', '2013-07-12');
 INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (8,'Australia Box Office Awards', 'Real D Award for Highest Grossing Film in New Zealand', '2013-07-13');
 INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (8,'Empire Awards', 'Best Sci-Fi/Fantasy', '2014-05-06');
-INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (8,'Houston Film Critics Society[', 'Technical Achievement', '2013-12-15');
+INSERT INTO premiacao (id_midia, nome_prem, categoria, data_prem) values (8,'Houston Film Critics Society', 'Technical Achievement', '2013-12-15');

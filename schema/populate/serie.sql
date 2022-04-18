@@ -1,0 +1,1 @@
+INSERT INTO serie(id_midia) VALUES (41);
