@@ -45,7 +45,7 @@ con = psycopg2.connect(
     host=os.getenv("hostname"),
     port=os.getenv("port"),
     dbname=os.getenv("database"),
-    user=os.getenv("username"),
+    user=os.getenv("user"),
     password=os.getenv("password")
 )
 
