@@ -1,5 +1,5 @@
 # Melissa [ator, diretor, filme, livro, manga, serie, midia] 
-# Igor [premiacao, usuario, episodio, lista] 
+# Igor [premiacao, usuario, episodio, lista]
 # Claudia [personagem, temporada, midia_generos, amizade]
 # Willian [avaliacao, direcao, participacao_ator, participacao_personagem, pertence]
 
