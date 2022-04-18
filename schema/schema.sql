@@ -124,19 +124,28 @@ CREATE TABLE participacao_ator (
 
 /* -------------------------------------------------- */
 
-CREATE TABLE premiacao (
+CREATE TABLE premio (
     id_prem INT NOT NULL GENERATED ALWAYS AS IDENTITY,
+    nome_prem CHAR(30) NOT NULL,
+    data_prem DATE NOT NULL,
+    PRIMARY KEY(id_prem)
+);
+
+/* -------------------------------------------------- */
+
+CREATE TABLE premiacao (
+    id_prem INTEGER,
     id_midia INTEGER,
     id_ator INTEGER,
-    nome_prem CHAR(30) NOT NULL,
     categoria CHAR(30) NOT NULL,
-    data_prem DATE NOT NULL,
     PRIMARY KEY(id_prem),
+    FOREIGN KEY(id_prem) REFERENCES premio(id_prem),
     FOREIGN KEY(id_ator) REFERENCES ator(id_ator),
     FOREIGN KEY(id_midia) REFERENCES midia(id_midia)
 );
 
 /* -------------------------------------------------- */
+
 
 CREATE TABLE personagem (
     id_pers INT NOT NULL GENERATED ALWAYS AS IDENTITY,
@@ -184,8 +193,17 @@ CREATE TABLE livro (
 
 CREATE TABLE manga (
     id_midia INTEGER,
-    tem_adapt BOOLEAN NOT NULL,
+    tem_anime BOOLEAN NOT NULL,
     nome_estudio CHAR(30),
+    PRIMARY KEY(id_midia),
+    FOREIGN KEY(id_midia) REFERENCES midia(id_midia)
+);
+
+/* -------------------------------------------------- */
+
+CREATE TABLE musica (
+    id_midia INTEGER,
+    origem CHAR(20),
     PRIMARY KEY(id_midia),
     FOREIGN KEY(id_midia) REFERENCES midia(id_midia)
 );
