@@ -85,6 +85,24 @@ INSERT INTO MIDIA (nome_midia, data_lanc, resumo) VALUES
 ('Assassination Classroom', '2012-07-02', 'A história é sobre a classe 3-E do Colégio Kunugigaoka, onde todas as manhãs, cumprimentam seu professor com um pelotão de fuzilamento em massa.  Essa criatura é responsável por destruir 70% da lua, tornando-a sempre em forma de lua crescente. Ele anunciou que vai destruir o mundo em 1 ano. A criatura vai ensinar a classe 3-E como assassiná-lo antes do ano terminar. '), -- MANGA
 ('Violet Evergarden', '2015-12-25', 'Violet Evergarden fala sobre a guerra, do ponto de vista de uma garota que em toda sua vida soube apenas o que era lutar. Após um derradeiro conflito, ela perdeu os braços e a única pessoa em quem confiava, deparando-se com uma realidade na qual não se encaixa.'), -- MANGA
 
-('A Procura da Felicidade', '2007-02-02', 'Chris enfrenta sérios problemas financeiros e Linda, sua esposa, decide partir. Ele agora é pai solteiro e precisa cuidar de Christopher, seu filho de 5 anos. Chris tenta usar sua habilidade como vendedor para conseguir um emprego melhor, mas só consegue um estágio não remunerado. Seus problemas financeiros não podem esperar uma promoção e eles acabam despejados. Chris e Christopher passam a dormir em abrigos ou onde quer que consigam um refúgio, mantendo a esperança de que dias melhores virão.'),
-('The Walking Dead', '2010-08-31', 'The Walking Dead é uma série norte-americana transmitida originalmente pelo canal AMC. A história acompanha a vida na Terra após um apocalipse zumbi e um grupo de sobreviventes liderados pelo ex-policial, Rick Grimes, viajam em busca de um lar seguro.'); -- FILME
-
+('Control', '2020-03-13', NULL), -- MUSICA
+('No Lie', '2016-11-18', NULL), -- MUSICA
+('Dynasty', '2021-12-20', NULL), -- MUSICA
+('Memorias', '2014-09-11', NULL), -- MUSICA
+('Dandelions', '2017-05-05', NULL), -- MUSICA
+('Towards The Sun', '2015-02-24', NULL), -- MUSICA
+('Silence', '2017-10-21', NULL), -- MUSICA
+('Enemy', '2021-10-28', NULL), -- MUSICA
+('Stand Out Fit In', '2018-11-23', NULL), -- MUSICA
+('Do I Wanna Know?', '2013-06-19', NULL), -- MUSICA
+('911', '2019-01-15', NULL), -- MUSICA
+('Never Be The Same', '2017-12-07', NULL), -- MUSICA
+('Colors', '2015-03-17', NULL), -- MUSICA
+('Home', '2013-02-10', NULL), -- MUSICA
+('Speechless', '2018-11-16', NULL), -- MUSICA
+('Easy On Me', '2021-10-15', NULL), -- MUSICA
+('Crush', '2008-08-01', NULL), -- MUSICA
+('Renegades', '2019-08-02', NULL), -- MUSICA
+('Starboy', '2016-09-27', NULL), -- MUSICA
+('Wrong Direction', '2020-01-01', NULL), -- MUSICA
+('Borboletas', '2008-09-10', NULL); -- MUSICA
