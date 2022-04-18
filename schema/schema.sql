@@ -20,7 +20,7 @@ CREATE TABLE usuario (
 /* -------------------------------------------------- */
 
 CREATE TABLE lista (
-    nome_lista PART_OF_URI UNIQUE,
+    nome_lista PART_OF_URI,
     nome_usuario PART_OF_URI,
     eh_favorita BOOLEAN,
     PRIMARY KEY(nome_lista, nome_usuario),

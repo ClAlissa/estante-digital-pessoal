@@ -18,3 +18,4 @@ INSERT INTO SERIE (data_final) VALUES
 ('2021-09-16'), -- Brooklyn Nine-Nine
 (NULL), -- The Witcher
 ('2021-12-03'); -- La casa de papel
+INSERT INTO serie(id_midia) VALUES (41);
