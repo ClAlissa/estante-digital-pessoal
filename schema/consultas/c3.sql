@@ -9,8 +9,8 @@ WHERE midia.id_midia
 IN (
     SELECT premiacao.id_midia
     FROM premiacao
-    JOIN premio ON premio.id_premio = premiacao.id_premio
-    WHERE premio.nome_premio = 'Oscar'
+    JOIN premio ON premio.id_prem = premiacao.id_prem
+    WHERE premio.nome_prem = 'Oscar'
 )
 AND midia.id_midia
 IN (
