@@ -150,11 +150,11 @@ CREATE TABLE premiacao (
 CREATE TABLE personagem (
     id_pers INT NOT NULL GENERATED ALWAYS AS IDENTITY,
     id_midia INTEGER,
-    id_autor INTEGER,
+    id_ator INTEGER,
     nome_pers CHAR(30) NOT NULL,
     descricao VARCHAR(255) NOT NULL,
     PRIMARY KEY(id_pers),
-    FOREIGN KEY(id_autor) REFERENCES diretor(id_dir),
+    FOREIGN KEY(id_ator) REFERENCES ator(id_ator),
     FOREIGN KEY(id_midia) REFERENCES midia(id_midia)
 );
 
